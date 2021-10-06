@@ -1,3 +1,4 @@
-var howManyYears = function(date1, date2){
-  console.log(parseInt(date2.split("/").shift()) - parseInt(date1.split("/").shift()))
+howManyYears = (date1, date2) => {
+  const value = parseInt(date2.split("/").shift()) - parseInt(date1.split("/").shift())
+  return value < 0 ? -(value) : value
 }
